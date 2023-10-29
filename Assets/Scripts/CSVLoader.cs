@@ -14,7 +14,7 @@ namespace LingoLoom
 
         public void LoadCSV()
         {
-            _csvFile = Resources.Load<TextAsset>("localistation");
+            _csvFile = Resources.Load<TextAsset>("Localisation");
 
            
         }
