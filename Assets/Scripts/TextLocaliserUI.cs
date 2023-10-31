@@ -9,13 +9,12 @@ namespace LingoLoom
     public class TextLocaliserUI : MonoBehaviour
     {
         TextMeshProUGUI _textField;
-        [SerializeField] string _key;
+        public LocalisedString LocalisedString;
 
         private void Start()
         {
-            _textField = GetComponent<TextMeshProUGUI>();
-            string value = LocalisationSystem.GetLocalisedValue(_key);
-            _textField.text = value;
+            _textField = GetComponent<TextMeshProUGUI>(); 
+            _textField.text = LocalisedString.value;
         }
     }
 }
